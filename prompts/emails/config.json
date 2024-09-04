@@ -1,0 +1,43 @@
+{
+    "schema": 1,
+    "type": "completion",
+    "description": "Generate a restaurant booking reservation email to the users",
+    "execution_settings": {
+        "default": {
+            "max_tokens": 4000,
+            "temperature": 0.3
+        }
+    },
+    "input_variables": [
+        {
+            "name": "RestaurantName",
+            "type": "string",
+            "description": "The name of the restaurant for the reservation."
+        },
+        {
+            "name": "BookingDate",
+            "type": "string",
+            "description": "The date and time of the reservation."
+        },
+        {
+            "name": "Count",
+            "type": "integer",
+            "description": "The number of people for the reservation."
+        },
+        {
+            "name": "CustomerName",
+            "type": "string",
+            "description": "The name of the customer making the reservation."
+        },
+        {
+            "name": "CustomerEmail",
+            "type": "string",
+            "description": "The email address of the customer."
+        },
+        {
+            "name": "CustomerPhone",
+            "type": "string",
+            "description": "The phone number of the customer."
+        }
+    ]
+}
