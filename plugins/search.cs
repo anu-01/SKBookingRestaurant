@@ -14,8 +14,13 @@ public class SearchPlugin
     [KernelFunction("SearchRestaurant")]
     [Description("Search for the best restaurants in a location based on cuisine type, ratings, number of people who rated.")]
     [return: Description("The best restaurants in a location based on cuisine type, ratings, number of people who rated.")]
-    public async Task<string> WebSearch([Description("restuarant")] string location, string cuisineType, string ratings, string numberofpeople)
+    public async Task<string> WebSearch(
+        [Description("Location ")] string location, 
+        [Description("Type of the cuisine ")] string cuisineType, 
+        [Description("Ratings")] string ratings, 
+        [Description("Number of ratings ")] string numberofpeople)
     {
+        Console.WriteLine("SearchRestaurant method was called");
         // Write a native function that calls a REST API (e.g. Bing search) to automatically retrieve the best restaurants in the city.
         var kernel = Kernel.CreateBuilder().Build();
         

@@ -1,7 +1,7 @@
 {
     "schema": 1,
     "type": "completion",
-    "description": "Generate a restaurant booking reservation email to the users",
+    "description": "Generate a restaurant booking reservation or cancellation email to the users",
     "execution_settings": {
         "default": {
             "max_tokens": 4000,
